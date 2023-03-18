@@ -8,10 +8,11 @@ function palindrome(str){
 // 	}
 //   }
 	let i = 0;
-	let j = str.length-1;
+	let string = str.toLowerCase();
+	let j = string.length-1;
 	//let ans = false;
 	while(i<j){
-		if(str.charAt(i).equalsIgnoreCase(str.charAt(j)) == false)
+		if(str.charAt(i)!=str.charAt(j))
 			return false;
 		i++;
 		j--;
